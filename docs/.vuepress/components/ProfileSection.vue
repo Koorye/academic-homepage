@@ -21,10 +21,17 @@
       <div class="contact">
         <div class="email" title="Contact me">{{ data.email }}</div>
       </div>
-      <div v-if="data.cv">
-        <a target="_blank" :href="data.cv" title="Download my CV in PDF">
-          <font size="2em" color=""><b>[CV]</b></font>
-        </a>
+      <div class="cvs">
+        <div v-if="data.cv">
+          <a target="_blank" :href="data.cv" title="Download my CV in PDF">
+            <font size="2em" color=""><b>[CV]</b></font>
+          </a>
+        </div>
+        <div v-if="data.cvCN">
+          <a target="_blank" :href="data.cvCN" title="下载PDF简历">
+            <font size="2em" color=""><b>[简历]</b></font>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -72,6 +79,9 @@ export default {
         cursor pointer
       b
         margin-left 1rem
+    .cvs
+      display flex
+      flex-direction row
     .contact
       .title
         font-size 1.2rem

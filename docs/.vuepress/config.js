@@ -1,18 +1,18 @@
 module.exports = {
-  title: "My Homepage",
-  description: "The description of the site.",
+  title: "Shihan Wu's Homepage",
+  description: "My Academic Homepage",
   head: [["link", { rel: "icon", href: `/logo.png` }]],
-  base: "./",
+  base: "/homepage/",
+  // base: "/",
   dest: "./dist",
 
   themeConfig: {
     search: false,
     nav: [
       { text: "Home", link: "/" },
-      { text: "About", link: "/about/" },
-      { text: "Projects", link: "/projects/" },
-      { text: "Guide", link: "/guide/" },
-      { text: "GitHub", link: "https://github.com/mtobeiyf/vuepress-homepage" }
+      { text: "Pubulications", link: "/publications/" },
+      { text: "About Me", link: "/about/" },
+      { text: "GitHub", link: "https://github.com/Koorye" }
     ],
     sidebar: {
       '/guide/': genSidebarConfig('Guide')
