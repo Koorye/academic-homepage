@@ -2,8 +2,8 @@ module.exports = {
   title: "Shihan Wu's Homepage",
   description: "My Academic Homepage",
   head: [["link", { rel: "icon", href: `/logo.png` }]],
-  base: "/homepage/",
-  // base: "/",
+  // base: "/homepage/",
+  base: "/",
   dest: "./dist",
 
   themeConfig: {
@@ -12,7 +12,7 @@ module.exports = {
       { text: "Home", link: "/" },
       { text: "Pubulications", link: "/publications/" },
       { text: "About Me", link: "/about/" },
-      { text: "GitHub", link: "https://github.com/Koorye" }
+      { text: "Blog", link: "https://Koorye.github.io/blog" }
     ],
     sidebar: {
       '/guide/': genSidebarConfig('Guide')
